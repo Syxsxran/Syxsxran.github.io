@@ -103,3 +103,44 @@ h1 {
   pointer-events: none; /* ป้องกันไอคอนไปกีดขวาง */
 }
 
+/*  */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none; /* ซ่อนปุ่มเมื่อเริ่มต้น */
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-inner.active {
+  display: block; /* แสดงเมื่อเลือกหมวดหมู่ */
+	position: absolute;
+  top: 50%; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  transform: translateY(-50%); /* แก้ไขการจัดตำแหน่ง */
+  z-index: 10; /* ทำให้ปุ่มอยู่เหนือเนื้อหา */
+  width: 40px; /* ปรับขนาดปุ่ม */
+  height: 40px; /* ปรับขนาดปุ่ม */
+  display: flex; /* ใช้ flexbox สำหรับจัดตำแหน่ง */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+
+.carousel-control-prev.show,
+.carousel-control-next.show {
+  display: block; /* แสดงปุ่มเมื่อเลือกหมวดหมู่ */
+	position: absolute;
+  top: 50%; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  transform: translateY(-50%); /* แก้ไขการจัดตำแหน่ง */
+  z-index: 10; /* ทำให้ปุ่มอยู่เหนือเนื้อหา */
+  width: 40px; /* ปรับขนาดปุ่ม */
+  height: 40px; /* ปรับขนาดปุ่ม */
+  display: flex; /* ใช้ flexbox สำหรับจัดตำแหน่ง */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+

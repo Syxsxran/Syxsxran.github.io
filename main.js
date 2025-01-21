@@ -1,6 +1,8 @@
 const categoryButtonsContainer = document.getElementById('categoryButtons');
 const carouselInner = document.querySelector('.carousel-inner');
 const loadingIndicator = document.getElementById('loading');
+const prevButton = document.querySelector('.carousel-control-prev');
+const nextButton = document.querySelector('.carousel-control-next');
 
 // Show loading indicator
 loadingIndicator.style.display = 'block';
@@ -32,6 +34,10 @@ fetch('https://script.google.com/macros/s/AKfycbxyGSpz978syhGuBGfTrUsK18vmm_PerU
           btn.classList.remove('active');
         });
         button.classList.add('active');
+
+        // Show navigation buttons
+        prevButton.classList.add('show');
+        nextButton.classList.add('show');
 
         let isFirst = true;
         categories[category].forEach(item => {
