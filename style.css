@@ -1,0 +1,105 @@
+body {
+  background-color: #e9f7fa;
+  font-family: "Prompt", sans-serif; /* Use the same font as Chatbot Handbook */
+  color: rgb(34, 41, 47);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+#loading {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px;
+  flex: 1; /* Take up remaining space */
+  text-align: left; /* Align text to the left */
+  position: relative; /* Enable positioning for child elements */
+}
+
+.card-title {
+  font-size: 1.5em; /* Adjusted font size */
+  color: #00aaff; /* Purple color */
+  font-weight: 600; /* Bold font weight */
+}
+
+.card-description {
+  font-size: 1em; /* Adjusted font size */
+  font-weight: 400; /* Normal font weight */
+}
+
+.card-button {
+  position: absolute; /* Position the button absolutely */
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  padding: 10px 15px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.card-image {
+  width: 451px; /* Set width to 451px */
+  height: 349px; /* Set height to 349px */
+}
+
+.categoryButton {
+  flex: 1;
+  margin: 10px; /* Add margin for spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  padding: 20px; /* Increased padding for larger buttons */
+  font-size: 1.2em; /* Increased font size */
+  height: 100px; /* Set a fixed height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  background-color: white; /* Default background color */
+}
+
+.categoryButton:hover,
+.categoryButton.active {
+  background-color: #00aaff; /* Change to blue on hover and active */
+  color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  transform: translateY(-50%); /* แก้ไขการจัดตำแหน่ง */
+  z-index: 10; /* ทำให้ปุ่มอยู่เหนือเนื้อหา */
+  width: 40px; /* ปรับขนาดปุ่ม */
+  height: 40px; /* ปรับขนาดปุ่ม */
+  display: flex; /* ใช้ flexbox สำหรับจัดตำแหน่ง */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  pointer-events: none; /* ป้องกันไอคอนไปกีดขวาง */
+}
+
